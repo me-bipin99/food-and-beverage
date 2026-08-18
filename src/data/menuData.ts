@@ -8,6 +8,10 @@ export const menuCategories = [
   { id: 'drinks', name: 'Bevrages' }
 ];
 
+// `image` currently points to a remote Unsplash URL for each item as a placeholder.
+// To use a custom photo instead: add the file to src/assets/images/, import it at the
+// top of this file (e.g. `import eggBread from '../assets/images/eggbread.jpg';`),
+// then set `image: eggBread` in place of the URL string below.
 export const menuItems = [
   // Breakfast Items
   {

@@ -38,7 +38,7 @@ function App() {
       
       {view === 'home' ? (
         <>
-          <Hero onNavigate={setView} />
+          <Hero />
           <Story />
           <FeaturedItems onNavigate={setView} />
           <About />

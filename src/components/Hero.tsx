@@ -2,11 +2,7 @@ import image1 from '../assets/images/home1.jpg';
 import image4 from '../assets/images/fryrice.jpg';
 import blacktea from '../assets/images/blacktea2.jpg';
 
-interface HeroProps {
-  onNavigate: (view: 'home' | 'menu') => void;
-}
-
-export default function Hero({ onNavigate }: HeroProps) {
+export default function Hero() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -35,8 +31,8 @@ export default function Hero({ onNavigate }: HeroProps) {
             Savor the authentic taste of Ming cuisine, prepared with the finest ingredients and a touch of tradition.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <button 
-                onClick={() => onNavigate('menu')}
+              <button
+                onClick={() => scrollToSection('menu')}
                 className="px-8 py-3 bg-amber-600 text-white hover:bg-amber-700 hover:shadow-lg hover:shadow-amber-600/20 active:scale-95 transition-all duration-300 rounded-lg font-medium">
                 View Menu
               </button>
